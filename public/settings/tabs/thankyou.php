@@ -1,8 +1,6 @@
 <?php
-
  $strive_wookc_thankyou_options_key = get_option( 'strive_wookc_thankyou_options_key');
-	if ($strive_wookc_thankyou_options_key['strive_wookc_show_thank_you_page_order_admin_actions'] == "on"){	
-		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/thankyou/strive_wookc_show_thank_you_page_order_admin_actions.php';	
+	if (isset($strive_wookc_thankyou_options_key['strive_wookc_show_thank_you_page_order_admin_actions']) && $strive_wookc_thankyou_options_key['strive_wookc_show_thank_you_page_order_admin_actions'] == "on"){		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/thankyou/strive_wookc_show_thank_you_page_order_admin_actions.php';	
 	}
 
 	if (isset($strive_wookc_thankyou_options_key['strive_wookc_register_guests']) && $strive_wookc_thankyou_options_key['strive_wookc_register_guests'] == "on"){		
