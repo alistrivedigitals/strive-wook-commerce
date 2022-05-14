@@ -1,0 +1,127 @@
+Plugin name:   Wook Commerce
+Slug:          strive_wookc_
+
+function strive_wookc_deny_product_pirchase(){
+     
+}
+Requirements:
+     Develop a plugin to manage popular woocommerce snippet from the backend based on checkbox selection.
+     For example:
+          There is a snippet in woocommerce to hide Add to Cart button, then that code must be managable from admin side. 
+          In admin, need to provide the option to check whether to hide add to cart button on single product page or not
+          After saving that settings, if we see single product page then that button must be hidden.
+
+     Create a separate tabs based on snippets like whether the snippet is associated with Cart, checkkout, Single product, etc...
+
+     Every tab will have option with respect to snippet associated with the Woocommerce or Wordpress
+
+     You can use CMB2 for creating admin settings.
+
+
+*******************************************************************************
+Points to keep in mind before coding and while coding
+     
+     Proper naming of the functions
+     Proper naming of the option_key and ids in cmb2 parameters
+     Make sure there is no space in option_key and ids of cmb2
+     Proper description on cmb2 field
+     Use proper variable names
+     Don't use number and capital letters in ids and option_keys ofcmb2
+     Text domain must be woocommerce
+     include js and css separately for admin and public and make sure it load accordingly
+     Update the icons to relevant
+     update the functions name with proper prefix in a businessblommer code snippets
+     Create separate folder for the snippets as per the tabs name for easy management
+
+     Task: 09-05-2022
+          Create all possible options for the cart and make it dynamic on frontend (Min 30 expected)
+          https://www.businessbloomer.com/tag/cart/
+
+     Task: 10-05-2022
+          Create all possible options for the Checkout and make it dynamic on frontend (Min 40 expected)     
+          https://www.businessbloomer.com/tag/checkout/
+
+     Task: 11-05-2022
+          Create all possible options for the Checkout, Add to cart and Category Pages and make it dynamic on frontend (Min 40 expected)    
+          https://www.businessbloomer.com/tag/add-to-cart/
+          https://www.businessbloomer.com/tag/category-page/
+          https://www.businessbloomer.com/tag/checkout/
+
+     Task: 12-05-2022
+          Create all possible options for the My Account page and Price and make it dynamic on frontend (Min 30 expected)
+          https://www.businessbloomer.com/tag/my-account/
+          https://www.businessbloomer.com/tag/price/
+
+     Task: 13-05-2022
+          Create all possible options for the Shop page and Thank you page and make it dynamic on frontend (Min 40 expected)
+          https://www.businessbloomer.com/tag/shop-page/
+          https://www.businessbloomer.com/tag/thank-you-page/
+
+*******************************************************************************
+
+ Plugin folder flow:
+     strive-wook-commerce
+          -admin
+               -assets
+                    -css
+                         -admin.css
+                         -other css library if required
+                    -js
+                         -admin.js
+                         -other js library if required
+
+               -settings
+                    -tabs
+                         -cart.php
+                         -checkout.php
+                         -etc...
+               -admin.php (main admin file)
+
+          -public
+               -assets
+                    -css
+                         -public.css
+                         -other css library if required
+                    -js
+                         -public.js
+                         -other js library if required
+
+               -settings
+                    -tabs
+                         -cart.php
+                         -checkout.php
+                         -etc...
+               public.php (main public file)          
+
+          -includes
+               -cmb2 (library must be here)
+                    xyz folder
+                    abc folder
+                    cmb2.php
+          -strive-wook-commerce.php (main plugin file)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     $strive_wookc_add_to_cart = '';  
+     if(isset($strive_wookc_add_to_cart)) {  
+    include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/add-to-cart/strive_wookc_product_max_1_cart_stock_low.php';
+       print_r($strive_wookc_add_to_cart);  
+     }  
+
+case 'group':
+				if ( empty( $field['render_row_cb'] ) ) {
+					$field['render_row_cb'] = array( $this, 'render_group_callback' );
+				}
+				break;
