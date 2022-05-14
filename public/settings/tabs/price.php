@@ -1,4 +1,3 @@
-
 <?php
 	$strive_wookc_price_options_keys = get_option('strive_wookc_price_options_keys');
 	
@@ -25,14 +24,12 @@
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/price/strive_wookc_quantity_based_pricing.php';	
 	}
 
-	
 	if (isset($strive_wookc_price_options_keys['strive_wookc_price_free_zero']) && $strive_wookc_price_options_keys['strive_wookc_price_free_zero'] == "on"){	
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/price/strive_wookc_price_free_zero.php';	
 		
 	}
 
-
-		if (isset($strive_wookc_price_options_keys['strive_wookc_single_varible_price']) && $strive_wookc_price_options_keys  ['strive_wookc_single_varible_price'] == "on"){
+	if (isset($strive_wookc_price_options_keys['strive_wookc_single_varible_price']) && $strive_wookc_price_options_keys  ['strive_wookc_single_varible_price'] == "on"){
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/price/strive_wookc_single_varible_price.php';	
 		
 	}
