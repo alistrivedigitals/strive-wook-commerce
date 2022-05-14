@@ -2,6 +2,10 @@
 	/**
 	 * Registers tertiary options page, and set main item as parent.
 	 */
+	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
+		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
+	}
+	
 	$myaccount_options = new_cmb2_box( array(
 		'id'           => 'strive_wookc_tertiary_options_page',
 		'title'        => esc_html__( 'Myaccount options', 'woocommerce' ),
