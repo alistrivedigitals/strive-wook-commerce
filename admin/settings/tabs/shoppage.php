@@ -5,7 +5,7 @@
 	$shop_options = new_cmb2_box( array(
 		'id'           => 'strive_wookc_shoppage_options_page',
 		'title'        => esc_html__( 'Shoppage options', 'woocommerce' ),
-		'object_types' => array( 'Options page' ),
+		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_shoppage_options_keys',
 		'parent_slug'  => 'strive_wookc_main_options',
 	) );

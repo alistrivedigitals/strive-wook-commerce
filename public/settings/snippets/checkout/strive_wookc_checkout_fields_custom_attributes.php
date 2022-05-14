@@ -1,23 +1,23 @@
 <?php
 	add_filter( 'woocommerce_checkout_fields', 'strive_wookc_checkout_fields_custom_attributes', 9999 );
  	function strive_wookc_checkout_fields_custom_attributes( $fields ) {
-   	$fields['billing']['billing_company']['maxlength'] = 15;
+   	$fields['billing']['billing_company']['maxlength'] = 5;
    	return $fields;
   }
   	add_filter( 'woocommerce_checkout_fields', 'strive_wookc_checkoutn_fields_custom_attributes', 9999 );
  	function strive_wookc_checkoutn_fields_custom_attributes( $fields ) {
-    $fields['billing']['billing_company']['custom_attributes']['minlength'] = 15;
+    $fields['billing']['billing_company']['custom_attributes']['minlength'] = 5;
     return $fields;
   }
 	add_filter( 'woocommerce_checkout_fields', 'strive_wookc_in_checkout_fields_custom_attributes', 9999 );
 	 
 	function strive_wookc_in_checkout_fields_custom_attributes( $fields ) {
-   	$fields['billing']['billing_company']['custom_attributes']['minlength'] = 15;
+   	$fields['billing']['billing_company']['custom_attributes']['minlength'] = 5;
    	return $fields;
   }
   	add_filter( 'woocommerce_checkout_fields', 'strive_wookc_checkout_fields_custom_can_attributes', 9999 );
 	function strive_wookc_checkout_fields_custom_can_attributes( $fields ) {
-   	$fields['billing']['billing_company']['custom_attributes']['pattern'] = '.{15,}';
+   	$fields['billing']['billing_company']['custom_attributes']['pattern'] = '.{5,}';
    	return $fields;
   }
   add_action( 'woocommerce_checkout_process', 'strive_wookc_checkout_fields_custom_validation' );

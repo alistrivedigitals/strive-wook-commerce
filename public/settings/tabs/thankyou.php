@@ -25,7 +25,7 @@
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/thankyou/strive_wookc_tracking_exclude_failed_orders.php';	
 	}
 
-	if (isset($strive_wookc_thankyou_options_key['strive_wookc_remove_product_link']) && $strive_wookc_thankyou_options_key['	strive_wookc_remove_product_link'] == "on"){		
+	if (isset($strive_wookc_thankyou_options_key['strive_wookc_remove_product_link']) && $strive_wookc_thankyou_options_key['strive_wookc_remove_product_link'] == "on"){		
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/thankyou/strive_wookc_remove_product_link.php';	
 	}
 

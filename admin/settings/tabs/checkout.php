@@ -4,8 +4,8 @@
 	 */
 	$checkedout_options = new_cmb2_box( array(
 		'id'           => 'strive_wookc_secondary_options_page',
-		'title'        => esc_html__( 'Checkout options', 'woocommerce' ),
-		'object_types' => array( 'options-page Options' ),
+		'title'        => esc_html__( 'Checkout options','woocommerce' ),
+		'object_types' => array('options-page'),
 		'option_key'   => 'strive_wookc_checkout_page_options',
 		'parent_slug'  => 'strive_wookc_main_options',
 	) );
@@ -60,7 +60,7 @@
 	*/
 	$checkedout_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
-		'desc' => esc_html__( 'Maximum And Minimum Length For Checkout Fields?', 'woocommerce' ),
+		'desc' => esc_html__( 'Maximum And Minimum Length For Checkout Fields ?', 'woocommerce' ),
 		'id'   => 'strive_wookc_checkout_fields_custom_attributes',
 		'type' => 'checkbox',
 	) );
