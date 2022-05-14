@@ -2,17 +2,19 @@
 	/**
 	 * Registers secondary options page, and set main item as parent.
 	 */
-	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
-		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
-	}
-	
-	$checkedout_options = new_cmb2_box( array(
+	$tab = ( array(
 		'id'           => 'strive_wookc_secondary_options_page',
 		'title'        => esc_html__( 'Checkout options','woocommerce' ),
 		'object_types' => array('options-page'),
 		'option_key'   => 'strive_wookc_checkout_page_options',
 		'parent_slug'  => 'strive_wookc_main_options',
 	) );
+
+	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
+		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
+	}
+	
+	$checkedout_options = new_cmb2_box($tab); 
 
 	$checkedout_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),

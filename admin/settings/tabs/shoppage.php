@@ -2,17 +2,19 @@
 	/**
 	 * Registers tertiary options page, and set main item as parent.
 	 */
-	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
-		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
-	}
-	
-	$shop_options = new_cmb2_box( array(
+	$tab = ( array(
 		'id'           => 'strive_wookc_shoppage_options_page',
 		'title'        => esc_html__( 'Shoppage options', 'woocommerce' ),
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_shoppage_options_keys',
 		'parent_slug'  => 'strive_wookc_main_options',
 	) );
+
+	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
+		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
+	}
+	
+	$shop_options = new_cmb2_box($tab);
 
 	/*
 		https://www.businessbloomer.com/woocommerce-prices-inc-and-ex-tax/

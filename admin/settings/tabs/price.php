@@ -2,17 +2,20 @@
 	/**
 	 * Registers tertiary options page, and set main item as parent.
 	 */
-	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
-		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
-	}
-
-	$price_options = new_cmb2_box( array(
+	$tab = ( array(
 		'id'           => 'strive_wookc_price_options_page',
 		'title'        => esc_html__( '	Price options', 'woocommerce' ),
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_price_options_keys',
 		'parent_slug'  => 'strive_wookc_main_options',
 	) );
+
+
+	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
+		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
+	}
+
+	$price_options = new_cmb2_box($tab);
 
 	/*
 		https://www.businessbloomer.com/woocommerce-replace-variable-price-with-variation-price/
