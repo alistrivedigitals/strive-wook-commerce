@@ -7,4 +7,5 @@
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/price.php';
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/shoppage.php';
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/thankyou.php';
+
 	
