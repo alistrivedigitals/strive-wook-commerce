@@ -4,7 +4,7 @@
 	 */
 	$add_to_cart_options = new_cmb2_box( array(
 		'id'           => 'strive_wookc_add_to_cart_page',
-		'title'        => esc_html__( 'Add-To-Cart Options', 'woocommerce' ),
+		'title'        => esc_html__( 'Addtocart options', 'woocommerce' ),
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_add_to_cart',
 		'parent_slug'  => 'strive_wookc_main_options',

@@ -4,7 +4,7 @@
 	 */
 	$myaccount_options = new_cmb2_box( array(
 		'id'           => 'strive_wookc_tertiary_options_page',
-		'title'        => esc_html__( 'My Account Options', 'woocommerce' ),
+		'title'        => esc_html__( 'Myaccount options', 'woocommerce' ),
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_myaccount_options_keys',
 		'parent_slug'  => 'strive_wookc_main_options',

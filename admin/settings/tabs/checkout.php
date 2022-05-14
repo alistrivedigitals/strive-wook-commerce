@@ -4,7 +4,7 @@
 	 */
 	$checkedout_options = new_cmb2_box( array(
 		'id'           => 'strive_wookc_secondary_options_page',
-		'title'        => esc_html__( 'Checkout Page', 'woocommerce' ),
+		'title'        => esc_html__( 'Checkout options', 'woocommerce' ),
 		'object_types' => array( 'options-page Options' ),
 		'option_key'   => 'strive_wookc_checkout_page_options',
 		'parent_slug'  => 'strive_wookc_main_options',

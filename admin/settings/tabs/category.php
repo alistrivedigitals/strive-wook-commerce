@@ -4,7 +4,7 @@
 	 */
 	$category_page_options = new_cmb2_box(array(
 		'id'           => 'strive_wookc_category_page',
-		'title'        => esc_html__( 'CategoryPage Options','woocommerce' ),
+		'title'        => esc_html__( 'Category options','woocommerce' ),
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_category_options_key',
 		'parent_slug'  => 'strive_wookc_main_options',
