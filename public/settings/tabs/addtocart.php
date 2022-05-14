@@ -1,7 +1,6 @@
  <?php
 	$strive_wookc_add_to_cart = get_option( 'strive_wookc_add_to_cart' );
-	
-    if (isset($strive_wookc_add_to_cart['strive_wookc_hide_add_cart_if_already_purchased']) && $strive_wookc_add_to_cart['strive_wookc_hide_add_cart_if_already_purchased'] == "on"){
+	if (isset($strive_wookc_add_to_cart['strive_wookc_hide_add_cart_if_already_purchased']) && $strive_wookc_add_to_cart['strive_wookc_hide_add_cart_if_already_purchased'] == "on"){
 	   include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_hide_add_cart_if_already_purchased.php';
 	}
     

@@ -122,8 +122,8 @@
 		https://www.businessbloomer.com/woocommerce-change-user-role-new-customers/
 	*/
 	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( 'strive_wookc_assign_custom_role?','woocommerce'),
+		'name' => esc_html__( 'Enable/Disable','woocommerce'),
+		'desc' => esc_html__( 'Change WooCommerce User Role Upon Registration?','woocommerce'),
 		'id'   => 'strive_wookc_assign_custom_role',
 		'type' => 'checkbox',
 	) );
@@ -149,99 +149,4 @@
 		'type' => 'checkbox',
 	) );
 	
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-	/*
-	
-	*/
-	$myaccount_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable','woocommerce' ),
-		'desc' => esc_html__( '? ','woocommerce'),
-		'id'   => '',
-		'type' => 'checkbox',
-	) );
-	
-
-
 	
