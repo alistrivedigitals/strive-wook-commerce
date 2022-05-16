@@ -18,6 +18,22 @@
 	$add_to_cart_options = new_cmb2_box( $tab );
 
 
+
+	$add_to_cart_options->add_field( array(
+		'name' => esc_html__( 'service_type', 'woocommerce'),
+		'desc' => esc_html__( 'checking cart?', 'woocommerce' ),
+		'id'   => 'service_type_1',
+		'type' => 'checkbox',
+	) );
+	$add_to_cart_options->add_field( array(
+		'name' => esc_html__( 'service_type', 'woocommerce'),
+		'desc' => esc_html__( 'lets satrt ?', 'woocommerce' ),
+		'id'   => 'service_type_2',
+		'type' => 'text',
+	) );
+	
+	
+
 	/*
 		https://www.businessbloomer.com/woocommerce-hide-add-to-cart-if-already-purchased/
 	*/

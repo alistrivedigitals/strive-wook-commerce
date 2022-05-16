@@ -15,14 +15,10 @@
 		'icon_url'        		=> 'dashicons-plugins-checked', // Menu icon. Only applicable if 'parent_slug' is left empty.
 		'menu_title'      		=> esc_html__( 'Wookc setting', 'woocommerce' ), // Falls back to 'title' (above).
 	) );
-
-	
 	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
-		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
+	$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
 	}
-
 	$cart_page_options = new_cmb2_box($tab);
-
 
 	/*
 		https://www.businessbloomer.com/woocommerce-retain-checkout-data-reload/
@@ -37,6 +33,7 @@
 	/*
 		https://www.businessbloomer.com/woocommerce-get-total-spent-by-customer/
 	*/
+
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
 		'desc' => esc_html__( 'Do you want to label your purchases over items?', 'woocommerce' ),
@@ -46,13 +43,21 @@
 	/* 
 		https://www.businessbloomer.com/woocommerce-exclude-product-from-discount-coupons/
 	*/
+
+
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
 		'desc' => esc_html__( 'Disable All Coupons for a Single Product ID  Checkout Page', 'woocommerce' ),
 		'id'   => 'strive_wookc_disable_coupon_for_single_page',
 		'type' => 'checkbox',
-	) );
+	));
 
+	$cart_page_options->add_field( array(
+		'name' => esc_html__( 'Enter Your Product id ', 'woocommerce'),
+		//'desc' => esc_html__( 'Disable All Coupons for a Single Product ID  Checkout Page', 'woocommerce' ),
+		'id'   => 'strive_wookc_disable',
+		'type' => 'text',
+		) );
 	/* 
 	`	https://www.businessbloomer.com/woocommerce-show-stock-cart-page/	
 	*/

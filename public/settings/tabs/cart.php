@@ -1,17 +1,23 @@
 <?php
+
 	$strive_wookc_main_options = get_option( 'strive_wookc_main_options' );
 	 if (isset($strive_wookc_main_options['strive_wookc_custome_field_data_checkout_reload']) && $strive_wookc_main_options['strive_wookc_custome_field_data_checkout_reload'] == "on"){	
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_custome_field_data_checkout_reload.php';
 	}
 	
-	if (isset($strive_wookc_main_options['strive_wookc_user_label_content_data']) && $strive_wookc_main_options['strive_wookc_user_label_content_data'] == "on"){	
-		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_user_label_content_data.php';
-	
+	if (isset($strive_wookc_main_options['strive_wookc_user_label_content_data']) && $strive_wookc_main_options['strive_wookc_user_label_content_data'] == "on"){
+	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_user_label_content_data.php';
+
 	}
 
-	if (isset($strive_wookc_main_options['strive_wookc_display_coupon_form_proceed_checkout']) && $strive_wookc_main_options['strive_wookc_display_coupon_form_proceed_checkout'] == "on"){	
+	if (isset($strive_wookc_main_options['strive_wookc_display_coupon_form_proceed_checkout']) && $strive_wookc_main_options['strive_wookc_display_coupon_form_proceed_checkout'] == "on"){
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_display_coupon_form_proceed_checkout.php';
+
 	}
+
+	if (isset($strive_wookc_main_options['strive_wookc_product_from_promotions_frontend']) && $strive_wookc_main_options['strive_wookc_product_from_promotions_frontend'] == "on"){
+		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_product_from_promotions_frontend.php';
+		}
 
 	if (isset($strive_wookc_main_options['strive_wookc_cartpage_empty']) && $strive_wookc_main_options['strive_wookc_cartpage_empty'] == "on"){	
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_cartpage_empty.php';
@@ -20,6 +26,8 @@
 
 	if (isset($strive_wookc_main_options['strive_wooks_remove_product_programmatically']) && $strive_wookc_main_options['strive_wooks_remove_product_programmatically'] == "on"){	
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wooks_remove_product_programmatically.php';
+
+
 	}
 
 	if (isset($strive_wookc_main_options['strive_wookc_trust_place_order']) && $strive_wookc_main_options['strive_wookc_trust_place_order'] == "on"){	
@@ -31,9 +39,6 @@
 		
 	}	
 	
-	if (isset($strive_wookc_main_options['strive_wookc_display_coupon_form_proceed_checkout']) && $strive_wookc_main_options['strive_wookc_display_coupon_form_proceed_checkout'] == "on"){	
-		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_display_coupon_form_proceed_checkout.php';
-	}
 
 	if (isset($strive_wookc_main_options['strive_wookc_exclude_hidden_minicart_counter']) && $strive_wookc_main_options['strive_wookc_exclude_hidden_minicart_counter'] == "on"){	
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/cart/strive_wookc_exclude_hidden_minicart_counter.php';
