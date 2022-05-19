@@ -42,10 +42,28 @@
 	*/
 	$category_page_options->add_field(array(
 		'name' => esc_html__('Enable/Disable','woocommerce' ),
-		'desc' => esc_html__(' Remove Shop Title? ', 'woocommerce' ),
+		'desc' => esc_html__(' Remove Shop Title? ','woocommerce' ),
 		'id'   => 'strive_wookc_hide_shop_page_title',
 		'type' => 'checkbox',
 	) );
+
+	/*
+..		https://www.businessbloomer.com/woocommerce-change-product-permalinks-shop-loop-pages/
+	*/
+	$category_page_options->add_field(array(
+		'name' => esc_html__('Enable/Disable','woocommerce' ),
+		'desc' => esc_html__(' Change Product Links ? ','woocommerce' ),
+		'id'   => 'strive_wookc_change_product_permalink_shop',
+		'type' => 'checkbox',
+	) );
+	$category_page_options->add_field(array(
+		'name' => esc_html__('Enable/Disable','woocommerce' ),
+		'desc' => esc_html__('Enter Product ID Number ? ','woocommerce' ),
+		'id'   => 'strive_wookc_change_product_shop',
+		'type' => 'text',
+	) );
+
+
 
 	/*
 		https://www.businessbloomer.com/woocommerce-add-a-second-content-box-product-category-pages/

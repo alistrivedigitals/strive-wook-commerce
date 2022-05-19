@@ -112,11 +112,11 @@
 	) );
 
 	/* 
-	
+		https://www.businessbloomer.com/woocommerce-add-upsell-area-checkout-page/
 	*/
 	$checkedout_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
-		'desc' => esc_html__( 'Add Upsell On Area? ', 'woocommerce' ),
+		'desc' => esc_html__( 'Add Upsell show in select Area? ', 'woocommerce' ),
 		'id'   => 'strive_wookc_checkout_add_on',
 		'type' => 'checkbox',
 	) );

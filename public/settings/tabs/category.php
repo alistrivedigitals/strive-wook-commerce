@@ -21,6 +21,10 @@
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/category/strive_wookc_no_product_found.php';	
 	}
 
+	if (isset($strive_wookc_category_options_key['strive_wookc_change_product_permalink_shop']) && $strive_wookc_category_options_key['strive_wookc_change_product_permalink_shop'] == "on"){
+		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/category/strive_wookc_change_product_permalink_shop.php';	
+	}
+
 	
 	if (isset($strive_wookc_category_options_key['strive_wookc_show_all_subcats']) && $strive_wookc_category_options_key['strive_wookc_show_all_subcats'] == "on"){
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/category/strive_wookc_show_all_subcats.php';	

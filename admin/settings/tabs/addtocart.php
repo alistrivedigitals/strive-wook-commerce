@@ -9,31 +9,29 @@
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_add_to_cart',
 		'parent_slug'  => 'strive_wookc_main_options',
+		 'show_names'    => true, 
 	);
 
-	if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
+    if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {
 		$tab['display_cb'] = 'yourprefix_options_display_with_tabs';
 	}
 	
 	$add_to_cart_options = new_cmb2_box( $tab );
 
-
-
+//1 https://www.businessbloomer.com/woocommerce-add-text-add-cart-single-product-page/
 	$add_to_cart_options->add_field( array(
-		'name' => esc_html__( 'service_type', 'woocommerce'),
-		'desc' => esc_html__( 'checking cart?', 'woocommerce' ),
-		'id'   => 'service_type_1',
+		'name' => esc_html__('Enable/Disable','woocommerce'),
+		'desc' => esc_html__('checking cart?','woocommerce' ),
+		'id'   => 'woocomerce_wookc_checkbox',
 		'type' => 'checkbox',
 	) );
 	$add_to_cart_options->add_field( array(
-		'name' => esc_html__( 'service_type', 'woocommerce'),
-		'desc' => esc_html__( 'lets satrt ?', 'woocommerce' ),
-		'id'   => 'service_type_2',
+		'name' => esc_html__( 'txt', 'woocommerce'),
+		'desc' => esc_html__( 'lets start ?', 'woocommerce' ),
+		'id'   => $cart .'woocomerce_wookc_text',
 		'type' => 'text',
 	) );
 	
-	
-
 	/*
 		https://www.businessbloomer.com/woocommerce-hide-add-to-cart-if-already-purchased/
 	*/
@@ -55,13 +53,19 @@
 	) );
 
 	/*
-		https://www.businessbloomer.com/woocommerce-remove-product-from-cart-programmatically/
+//5		https://www.businessbloomer.com/woocommerce-remove-product-from-cart-programmatically/
 	*/
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
 		'desc' => esc_html__( 'Remove Item From Cart Automatically?','woocommerce' ),
 		'id'   => 'strive_wookc_remove_product_from_cart_programmatically',
 		'type' => 'checkbox',
+	) );
+	$add_to_cart_options->add_field( array(
+		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
+		'desc' => esc_html__( 'Remove Item F?','woocommerce' ),
+		'id'   => 'strive_wookc_remove_product_from_cart_programmatically',
+		'type' => 'text',
 	) );
 
 	/*
@@ -85,7 +89,7 @@
 	) );
 
 	/*
-		https://www.businessbloomer.com/woocommerce-force-product-quantity-1-cart/
+2		https://www.businessbloomer.com/woocommerce-force-product-quantity-1-cart/
 	*/
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
@@ -93,6 +97,13 @@
 		'id'   => 'strive_wookc_add_product_to_cart_on_page_id_load',
 		'type' => 'checkbox',
 	) );
+		$add_to_cart_options->add_field( array(
+		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
+		'desc' => esc_html__( 'Add Your ID No?', 'woocommerce' ),
+		'id'   => 'strive_wookc_add_product_to_cart_on_page_id_load',
+		'type' => 'text',
+	) );
+
 
 	/*
 		https://www.businessbloomer.com/woocommerce-rename-add-to-cart-button-if-product-already-cart/
@@ -166,7 +177,7 @@
 	) );
 
 	/*
-		https://www.businessbloomer.com/woocommerce-add-item-to-cart-programmatically/
+3		https://www.businessbloomer.com/woocommerce-add-item-to-cart-programmatically/
 	*/
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
@@ -174,5 +185,10 @@
 		'id'   => 'strive_wookc_add_product_cart_automatically',
 		'type' => 'checkbox',
 	) );
-
+	$add_to_cart_options->add_field( array(
+		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
+		'desc' => esc_html__( 'add product ID?','woocommerce' ),
+		'id'   => 'strive_wookc_add_product_cart_automatically',
+		'type' => 'text',
+	) );
 

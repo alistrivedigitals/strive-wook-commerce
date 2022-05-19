@@ -4,14 +4,28 @@
 	   include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_hide_add_cart_if_already_purchased.php';
 	}
 
-     if (isset($strive_wookc_add_to_cart['strive_wookc_hide']) && $strive_wookc_add_to_cart['strive_wookc_hide'] == "on"){
-        include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_hide.php';
-    }
-    
+
+    // if (isset($strive_wookc_add_to_cart['strive_wookc_hide']) && $strive_wookc_add_to_cart['strive_wookc_hide'] == "on"){
+    //     include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_hide.php';
+    // }
+
+
+    if (isset($strive_wookc_add_to_cart['woocomerce_wookc_checkbox']) && $strive_wookc_add_to_cart['woocomerce_wookc_checkbox'] == "on") {   
+ 
+        $product_id = 15;
+        if ( WC()->cart->get_cart_contents_count() == 0 ) {
+        WC()->cart->add_to_cart( $product_id );
+         
+     }
+ }
+
+
     if (isset($strive_wookc_add_to_cart['strive_wookc_product_max_one_cart_stock_low']) && $strive_wookc_add_to_cart['strive_wookc_product_max_one_cart_stock_low'] == "on"){
 		include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_product_max_one_cart_stock_low.php';
 	}
 
+    
+    
     if (isset($strive_wookc_add_to_cart['strive_wookc_remove_product_from_cart_programmatically']) && $strive_wookc_add_to_cart['strive_wookc_remove_product_from_cart_programmatically'] == "on"){
         include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_remove_product_from_cart_programmatically.php';
     }
