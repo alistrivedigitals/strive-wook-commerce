@@ -19,6 +19,7 @@
 	$add_to_cart_options = new_cmb2_box( $tab );
 
 //1 https://www.businessbloomer.com/woocommerce-add-text-add-cart-single-product-page/
+	
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__('Enable/Disable','woocommerce'),
 		'desc' => esc_html__('checking cart?','woocommerce' ),
@@ -28,10 +29,11 @@
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__( 'txt', 'woocommerce'),
 		'desc' => esc_html__( 'lets start ?', 'woocommerce' ),
-		'id'   => $cart .'woocomerce_wookc_text',
+		'id'   => 'woocomerce_wookc_text',
 		'type' => 'text',
 	) );
-	
+
+
 	/*
 		https://www.businessbloomer.com/woocommerce-hide-add-to-cart-if-already-purchased/
 	*/
@@ -53,7 +55,7 @@
 	) );
 
 	/*
-//5		https://www.businessbloomer.com/woocommerce-remove-product-from-cart-programmatically/
+		https://www.businessbloomer.com/woocommerce-remove-product-from-cart-programmatically/
 	*/
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
@@ -62,9 +64,9 @@
 		'type' => 'checkbox',
 	) );
 	$add_to_cart_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
-		'desc' => esc_html__( 'Remove Item F?','woocommerce' ),
-		'id'   => 'strive_wookc_remove_product_from_cart_programmatically',
+		'name' => esc_html__( 'Enable Checkout ? ', 'woocommerce'),
+		'desc' => esc_html__( 'which ID Product Remove?','woocommerce' ),
+		'id'   => 'strive_wookc_remove_text_product_programmatically',
 		'type' => 'text',
 	) );
 
@@ -89,8 +91,9 @@
 	) );
 
 	/*
-2		https://www.businessbloomer.com/woocommerce-force-product-quantity-1-cart/
+		https://www.businessbloomer.com/woocommerce-force-product-quantity-1-cart/
 	*/
+	
 	$add_to_cart_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
 		'desc' => esc_html__( 'Add Product to Cart When Visiting a Specific Page ID?', 'woocommerce' ),
@@ -177,18 +180,18 @@
 	) );
 
 	/*
-3		https://www.businessbloomer.com/woocommerce-add-item-to-cart-programmatically/
+		https://www.businessbloomer.com/woocommerce-add-item-to-cart-programmatically/
 	*/
-	$add_to_cart_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
-		'desc' => esc_html__( 'Add Product to Cart On Visit Programmatically?','woocommerce' ),
-		'id'   => 'strive_wookc_add_product_cart_automatically',
-		'type' => 'checkbox',
-	) );
-	$add_to_cart_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
-		'desc' => esc_html__( 'add product ID?','woocommerce' ),
-		'id'   => 'strive_wookc_add_product_cart_automatically',
-		'type' => 'text',
-	) );
+	// $add_to_cart_options->add_field( array(
+	// 	'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
+	// 	'desc' => esc_html__( 'Add Product to Cart On Visit Programmatically?','woocommerce' ),
+	// 	'id'   => 'strive_wookc_add_product_cart_automatically',
+	// 	'type' => 'checkbox',
+	// ) );
+	// $add_to_cart_options->add_field( array(
+	// 	'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
+	// 	'desc' => esc_html__( 'add product ID?','woocommerce' ),
+	// 	'id'   => 'strive_wookc_add_product_text_automatically',
+	// 	'type' => 'text',
+	// ) );
 

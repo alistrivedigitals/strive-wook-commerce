@@ -212,6 +212,12 @@
 		'id'   => 'strive_wookc_variation_price_format_min',
 		'type' => 'checkbox',
 	) );
+	$price_options->add_field( array(
+		'name' => esc_html__('Howmany Min Price ?','woocommerce' ),
+		'desc' => esc_html__('Min Price ?','woocommerce'),
+		'id'   => 'strive_wookc_variation_price_min',
+		'type' => 'text',
+	) );
 	
 
 	

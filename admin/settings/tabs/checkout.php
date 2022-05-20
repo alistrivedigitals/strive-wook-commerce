@@ -110,7 +110,12 @@
 		'id'   => 'strive_wookc_rename_state_province',
 		'type' => 'checkbox',
 	) );
-
+	$checkedout_options->add_field( array(
+		'name' => esc_html__( 'Rename the state ?', 'woocommerce' ),
+		'desc' => esc_html__( 'which name ?', 'woocommerce' ),
+		'id'   => 'strive_wookc_rename_state_province',
+		'type' => 'checkbox',
+	) );
 	/* 
 		https://www.businessbloomer.com/woocommerce-add-upsell-area-checkout-page/
 	*/
@@ -120,9 +125,15 @@
 		'id'   => 'strive_wookc_checkout_add_on',
 		'type' => 'checkbox',
 	) );
+	$checkedout_options->add_field( array(
+		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
+		'desc' => esc_html__( 'add Product Ids ?', 'woocommerce' ),
+		'id'   => 'strive_wookc_checkout_add_on',
+		'type' => 'text',
+	) );
 
 	/* 	
-IDHR	https://www.businessbloomer.com/woocommerce-display-required-field-errors-inline-checkout/
+	https://www.businessbloomer.com/woocommerce-display-required-field-errors-inline-checkout/
 	*/
 	$checkedout_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
@@ -130,6 +141,13 @@ IDHR	https://www.businessbloomer.com/woocommerce-display-required-field-errors-i
 		'id'   => 'strive_wookc_checkout_fields_in_label_error',
 		'type' => 'checkbox',
 	) );
+	$checkedout_options->add_field( array(
+		'name' => esc_html__( 'Enable Checkbox ?', 'woocommerce' ),
+		'desc' => esc_html__( 'Display ID Name? ','woocommerce' ),
+		'id'   => 'strive_wookc_checkout_fields_in_label_error',
+		'type' => 'checkbox',
+	) );
+
 
 	/* 
 		https://www.businessbloomer.com/woocommerce-add-checkout-fees-based-on-radio-button-choice-ajax/
@@ -169,6 +187,13 @@ IDHR	https://www.businessbloomer.com/woocommerce-display-required-field-errors-i
 		'desc' => esc_html__( ' Add Content Under “Place Order” Button ? ','woocommerce' ),
 		'id'   => 'strive_wookc_privacy_message_below_checkout_button',
 		'type' => 'checkbox',
+	) );
+	*/
+	$checkedout_options->add_field( array(
+		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
+		'desc' => esc_html__( 'Add MESSAGE ? ','woocommerce' ),
+		'id'   => 'strive_wookc_privacy_message_below_checkout_button',
+		'type' => 'text',
 	) );
 
 	/* 

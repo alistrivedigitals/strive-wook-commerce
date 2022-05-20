@@ -31,7 +31,7 @@
 		https://www.businessbloomer.com/woocommerce-display-product-categories-select-list/
 	*/
 	$category_page_options->add_field(array(
-		'name' => esc_html__('Enable/Disable','woocommerce' ),
+		'name' => esc_html__('Enable/Disable','woocommerce'),
 		'desc' => esc_html__(' Display a Product Categories Dropdown Select? ', 'woocommerce' ),
 		'id'   => 'strive_wookc_filter_by_tag',
 		'type' => 'checkbox',
@@ -56,10 +56,11 @@
 		'id'   => 'strive_wookc_change_product_permalink_shop',
 		'type' => 'checkbox',
 	) );
+
 	$category_page_options->add_field(array(
 		'name' => esc_html__('Enable/Disable','woocommerce' ),
 		'desc' => esc_html__('Enter Product ID Number ? ','woocommerce' ),
-		'id'   => 'strive_wookc_change_product_shop',
+		'id'   => 'strive_wookc_text_change_product_shop',
 		'type' => 'text',
 	) );
 

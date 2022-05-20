@@ -17,7 +17,9 @@
 			include_once STRIVE_WOOKC_PLUGIN_ADMIN_DIR.'/settings/tabs/thankyou.php';
 			include_once STRIVE_WOOKC_PLUGIN_ADMIN_DIR.'/settings/tabs/order.php';
 			include_once STRIVE_WOOKC_PLUGIN_ADMIN_DIR.'/settings/tabs/shipping.php';
-
+			include_once STRIVE_WOOKC_PLUGIN_ADMIN_DIR.'/settings/tabs/featureimage.php';
+			include_once STRIVE_WOOKC_PLUGIN_ADMIN_DIR.'/settings/tabs/coupon.php';
+			include_once STRIVE_WOOKC_PLUGIN_ADMIN_DIR.'/settings/tabs/looppages.php';
 		}	
 
 		add_action( 'cmb2_admin_init', 'strive_wookc_register_main_options_metabox' );

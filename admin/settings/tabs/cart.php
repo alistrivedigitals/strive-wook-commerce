@@ -164,6 +164,12 @@
 		'id'   => 'strive_wooks_change_continue_shopping',
 		'type' => 'checkbox',
 	) );
+	$cart_page_options->add_field( array(
+		'name' => esc_html__( 'Add a Link ?', 'woocommerce'),
+		'desc' => esc_html__( 'Add a Link in Continued Shopping', 'woocommerce' ),
+		'id'   => 'strive_wooks_change_continue_shopping',
+		'type' => 'text',
+	) );
 
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
@@ -199,6 +205,14 @@
 		'id'   => 'strive_wookc_display_coupon_form_proceed_checkout',
 		'type' => 'checkbox',
 	) );
+	$cart_page_options->add_field( array(
+		'name' => esc_html__( 'Enable Buttons?', 'woocommerce'),
+		'desc' => esc_html__( 'Coupon Buttons ?', 'woocommerce' ),
+		'id'   => 'strive_wookc_display_coupon_form_proceed_checkout',
+		'type' => 'text',
+	) );
+
+	
 
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
@@ -230,7 +244,13 @@
 	//
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
-		'desc' => esc_html__( 'Automatic Cart-Update Message Print? ', 'woocommerce' ),
+		'desc' => esc_html__( 'Automatic Cart-Update Message Print ? ', 'woocommerce' ),
+		'id'   => 'strive_wookc_updated_message_label',
+		'type' => 'checkbox',
+	) );
+	$cart_page_options->add_field( array(
+		'name' => esc_html__( 'Enable Value ?', 'woocommerce'),
+		'desc' => esc_html__( 'message type Here ? ', 'woocommerce' ),
 		'id'   => 'strive_wookc_updated_message_label',
 		'type' => 'checkbox',
 	) );
@@ -278,6 +298,12 @@
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
 		'desc' => esc_html__( 'Display 0 Amount For Free Shipping Rate?', 'woocommerce' ),
+		'id'   => 'strive_wookc_add_0_to_shipping_label',
+		'type' => 'checkbox',
+	) );
+	$cart_page_options->add_field( array(
+		'name' => esc_html__( 'Enable Checkout ?', 'woocommerce'),
+		'desc' => esc_html__( 'Product Id ?', 'woocommerce' ),
 		'id'   => 'strive_wookc_add_0_to_shipping_label',
 		'type' => 'checkbox',
 	) );

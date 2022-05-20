@@ -9,3 +9,7 @@
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/thankyou.php';
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/order.php';
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/shipping.php';
+	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/featureimage.php';	
+	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/emails.php';	
+	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/looppages.php';
+	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/coupon.php';
