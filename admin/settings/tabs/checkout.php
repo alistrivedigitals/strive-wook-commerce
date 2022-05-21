@@ -111,10 +111,10 @@
 		'type' => 'checkbox',
 	) );
 	$checkedout_options->add_field( array(
-		'name' => esc_html__( 'Rename the state ?', 'woocommerce' ),
+		'name' => esc_html__( 'Enable Checkbox ?', 'woocommerce' ),
 		'desc' => esc_html__( 'which name ?', 'woocommerce' ),
 		'id'   => 'strive_wookc_rename_state_province',
-		'type' => 'checkbox',
+		'type' => 'text',
 	) );
 	/* 
 		https://www.businessbloomer.com/woocommerce-add-upsell-area-checkout-page/
@@ -188,9 +188,9 @@
 		'id'   => 'strive_wookc_privacy_message_below_checkout_button',
 		'type' => 'checkbox',
 	) );
-	*/
+	
 	$checkedout_options->add_field( array(
-		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
+		'name' => esc_html__( 'Enable Checkbox ?', 'woocommerce' ),
 		'desc' => esc_html__( 'Add MESSAGE ? ','woocommerce' ),
 		'id'   => 'strive_wookc_privacy_message_below_checkout_button',
 		'type' => 'text',

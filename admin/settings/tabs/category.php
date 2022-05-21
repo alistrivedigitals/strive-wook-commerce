@@ -48,7 +48,7 @@
 	) );
 
 	/*
-..		https://www.businessbloomer.com/woocommerce-change-product-permalinks-shop-loop-pages/
+		https://www.businessbloomer.com/woocommerce-change-product-permalinks-shop-loop-pages/
 	*/
 	$category_page_options->add_field(array(
 		'name' => esc_html__('Enable/Disable','woocommerce' ),
@@ -58,7 +58,7 @@
 	) );
 
 	$category_page_options->add_field(array(
-		'name' => esc_html__('Enable/Disable','woocommerce' ),
+		'name' => esc_html__('Enable Checkbox ?','woocommerce' ),
 		'desc' => esc_html__('Enter Product ID Number ? ','woocommerce' ),
 		'id'   => 'strive_wookc_text_change_product_shop',
 		'type' => 'text',

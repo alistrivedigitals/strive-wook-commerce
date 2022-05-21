@@ -2,7 +2,7 @@
 
 	$tab = ( array(
 		'id'           => 'strive_wookc_featureimage_page',
-		'title'        => esc_html__( 'FeatureImage options', 'woocommerce' ),
+		'title'        => esc_html__( 'FeatureImage options','woocommerce' ),
 		'object_types' => array( 'options-page' ),
 		'option_key'   => 'strive_wookc_featureimage_options_keys',
 		'parent_slug'  => 'strive_wookc_main_options',

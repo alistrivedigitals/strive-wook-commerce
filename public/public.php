@@ -13,3 +13,4 @@
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/emails.php';	
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/looppages.php';
 	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/coupon.php';
+	include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/tabs/adminpage.php';

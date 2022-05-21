@@ -157,18 +157,12 @@
 		'id'   => 'strive_wooks_quantity_based_pricing',
 		'type' => 'checkbox',
 	) );
-////
+
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),
 		'desc' => esc_html__( 'Add a Link in Continued Shopping', 'woocommerce' ),
 		'id'   => 'strive_wooks_change_continue_shopping',
 		'type' => 'checkbox',
-	) );
-	$cart_page_options->add_field( array(
-		'name' => esc_html__( 'Add a Link ?', 'woocommerce'),
-		'desc' => esc_html__( 'Add a Link in Continued Shopping', 'woocommerce' ),
-		'id'   => 'strive_wooks_change_continue_shopping',
-		'type' => 'text',
 	) );
 
 	$cart_page_options->add_field( array(
@@ -205,14 +199,6 @@
 		'id'   => 'strive_wookc_display_coupon_form_proceed_checkout',
 		'type' => 'checkbox',
 	) );
-	$cart_page_options->add_field( array(
-		'name' => esc_html__( 'Enable Buttons?', 'woocommerce'),
-		'desc' => esc_html__( 'Coupon Buttons ?', 'woocommerce' ),
-		'id'   => 'strive_wookc_display_coupon_form_proceed_checkout',
-		'type' => 'text',
-	) );
-
-	
 
 	$cart_page_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce'),

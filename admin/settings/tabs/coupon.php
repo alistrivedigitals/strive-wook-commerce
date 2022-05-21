@@ -34,6 +34,12 @@
 		'id'   => 'strive_wookc_have_coupon_message',
 		'type' => 'checkbox',
 	) );
+	$coupon_options->add_field( array(
+		'name' => esc_html__( 'Enable Checkbox ?', 'woocommerce' ),
+		'desc' => esc_html__( 'Add Your Message?' ),
+		'id'   => 'strive_wookc_coupon_message',
+		'type' => 'text',
+	) );
 
 
 

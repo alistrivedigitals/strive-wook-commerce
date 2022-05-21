@@ -3,8 +3,8 @@
 	$tab = ( array(
 		'id'           => 'strive_wookc_emails_page',
 		'title'        => esc_html__( 'Emails options','woocommerce' ),
-		'object_types' => array('options-page'),
-		'option_key'   => 'strive_wookc_emails_page_options',
+		'object_types' => array( 'options-page' ),
+		'option_key'   => 'strive_wookc_emails_page_keys',
 		'parent_slug'  => 'strive_wookc_main_options',
 	) );
 
@@ -17,6 +17,7 @@
 	/*
 		https://www.businessbloomer.com/woocommerce-remaining-stock-order-emails/
 	*/
+	
 	$emails_options->add_field( array(
 		'name' => esc_html__( 'Enable/Disable', 'woocommerce' ),
 		'desc' => esc_html__( 'Display Remaining Item Stock Quantity In New Order?','woocommerce' ),
@@ -25,7 +26,7 @@
 	) );
 
 	/*
-		
+		https://www.businessbloomer.com/woocommerce-attach-file-pdf-emails/
 	*/
 	$emails_options->add_field( array(
 		'name' => esc_html__('Enable/Disable', 'woocommerce' ),
@@ -127,6 +128,12 @@
 		'desc' => esc_html__( 'Remove Link Product ? ', 'woocommerce' ),
 		'id'   => 'strive_wookc_add_content_specific_email',
 		'type' => 'checkbox',
+	) );
+	$emails_options->add_field( array(
+		'name' => esc_html__( 'Enable Checkbox ?', 'woocommerce' ),
+		'desc' => esc_html__( 'Enter Your Message ? ', 'woocommerce' ),
+		'id'   => 'strive_wookc_specific_email',
+		'type' => 'text',
 	) );
 
 	/*

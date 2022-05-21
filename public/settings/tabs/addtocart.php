@@ -1,11 +1,13 @@
  <?php
+    global $strive_wookc_add_to_cart;
+
 	$strive_wookc_add_to_cart = get_option( 'strive_wookc_add_to_cart' );
 	if (isset($strive_wookc_add_to_cart['strive_wookc_hide_add_cart_if_already_purchased']) && $strive_wookc_add_to_cart['strive_wookc_hide_add_cart_if_already_purchased'] == "on"){
 	   include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/strive_wookc_hide_add_cart_if_already_purchased.php';
 	}
 
     if (isset($strive_wookc_add_to_cart['woocomerce_wookc_checkbox']) && $strive_wookc_add_to_cart['woocomerce_wookc_checkbox'] == "on") {   
-          include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/woocomerce_wookc_text.php';
+         include_once STRIVE_WOOKC_PLUGIN_PUBLIC_DIR.'/settings/snippets/addtocart/woocomerce_wookc_text.php';
 
     }
 
